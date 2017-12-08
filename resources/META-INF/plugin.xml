@@ -29,9 +29,21 @@
     <!-- Add your extensions here -->
     <spring.customNamespaces implementation="com.eyougo.dubbo.spring.DubboCustomNamespaces" />
 
-
     <dom.implementation interfaceClass="com.eyougo.dubbo.spring.DubboReference"
-                        implementationClass="com.eyougo.dubbo.spring.DubboReferenceImpl"/>
+                        implementationClass="com.intellij.spring.model.xml.DomSpringBeanImpl"/>
+
+    <dom.implementation interfaceClass="com.eyougo.dubbo.spring.DubboApplication"
+                        implementationClass="com.intellij.spring.model.xml.DomSpringBeanImpl"/>
+
+    <dom.implementation interfaceClass="com.eyougo.dubbo.spring.DubboConsumer"
+                        implementationClass="com.intellij.spring.model.xml.DomSpringBeanImpl"/>
+
+    <dom.implementation interfaceClass="com.eyougo.dubbo.spring.DubboProvider"
+                        implementationClass="com.intellij.spring.model.xml.DomSpringBeanImpl"/>
+
+    <dom.implementation interfaceClass="com.eyougo.dubbo.spring.DubboRegistry"
+                        implementationClass="com.intellij.spring.model.xml.DomSpringBeanImpl"/>
+
   </extensions>
 
   <actions>

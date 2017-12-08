@@ -6,6 +6,6 @@ import com.intellij.util.xml.Namespace;
 /**
  * Created by mei on 04/12/2017.
  */
-@Namespace("Dubbo namespace key")
-public interface DubboReferenceElement extends DomElement {
+@Namespace("DubboReference namespace key")
+public interface DubboElement extends DomElement {
 }
